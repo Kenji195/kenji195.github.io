@@ -1,0 +1,25 @@
+#content {
+  text-align: center;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.bolderText {
+  font-weight: bolder;
+}
+
+.list {
+  text-align: justify;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.list-elements li {
+  font-weight: bold;
+}
+
+.list-elements li ol li {
+  font-weight: normal;
+}
