@@ -29,12 +29,16 @@
 }
 
 .contacts-row {
-  display: flex;
+  display: grid;
   gap: 10px;
+
+  grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
+  justify-content: center; /* 🔥 centers the whole grid */
 }
 
 .contact_btn {
-  flex: 1;
+  min-width: 150px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,4 +61,8 @@
   width: 20px;
   height: 20px;
   object-fit: contain;
+}
+
+.contact_label {
+  white-space: nowrap;
 }
