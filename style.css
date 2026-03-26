@@ -20,10 +20,12 @@
 
 .list-elements li {
   font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .list-elements li ol li {
   font-weight: normal;
+  margin-bottom: 1px;
 }
 
 .contacts-row {
