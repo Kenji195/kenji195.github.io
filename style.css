@@ -1,5 +1,7 @@
 #content {
   text-align: center;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .boldText {
@@ -22,4 +24,35 @@
 
 .list-elements li ol li {
   font-weight: normal;
+}
+
+.contacts-row {
+  display: flex;
+  gap: 10px;
+}
+
+.contact_btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 12px;
+  text-decoration: none;
+  background: #2c2c2c;
+  color: white;
+  border-radius: 8px;
+
+  transition: 0.2s;
+}
+
+.contact_btn:hover {
+  background: #444;
+}
+
+.contact_icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
