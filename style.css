@@ -29,11 +29,10 @@
 }
 
 .contacts-row {
-  display: grid;
+  display: flex;
   gap: 10px;
-
-  grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
-  justify-content: center; /* 🔥 centers the whole grid */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contact_btn {
