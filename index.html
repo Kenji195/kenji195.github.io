@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kenji 195</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/imagePreviewStyle.css" />
+    <link rel="stylesheet" href="styles/contactSection.css" />
+    <link rel="stylesheet" href="styles/commissionSheetStyle.css" />
+    <link rel="stylesheet" href="styles/termsListStyle.css" />
   </head>
   <body>
     <div id="content">
+      <!--
       <h1>
         This site is in progress, for now it'll be limited to just artworks
         commission terms of service
       </h1>
+      -->
 
-      <div>
+      <div id="contact-section">
         <h2>Contact me</h2>
         <div class="contacts-row">
           <a
@@ -96,9 +102,23 @@
         <h4>Email address: kenji195@gmail.com</h4>
       </div>
 
+      <p></p>
+
+      <div id="commissionSheet-section">
+        <h2>Current commission price sheets ([03/2026])</h2>
+        <div id="commissionSheets">
+          <div class="commissionSheet">
+            <img
+              src="images/commissions/sheets/Traditional Commissions.png"
+              alt="Traditional illustration commission price sheet"
+              onclick="openPreview(this)" />
+          </div>
+        </div>
+      </div>
+
       <p style="height: 20px"></p>
 
-      <div id="termsList" class="list">
+      <div id="terms-section">
         <h2 style="font-weight: normal">
           Artwork commissions'
           <span class="boldText">Terms of Service Agreement</span>
@@ -111,7 +131,7 @@
         the Artist and the Client for the commission of an artwork ("Work").
         <p style="height: 10px"></p>
         By commissioning the Artist, the Client agrees to the following terms:
-        <div class="list-elements">
+        <div class="termsList-elements">
           <ol>
             <li>
               ENGAGEMENT
@@ -478,8 +498,14 @@
         </div>
       </div>
     </div>
+
+    <div id="imagePreview" onclick="closePreview()">
+      <img id="previewImg" />
+    </div>
+
     <footer>
-      <script src="overwriteTermsStyle.js"></script>
+      <script src="scripts/overwriteTermsListStyle.js"></script>
+      <script src="scripts/imagePreview.js"></script>
     </footer>
   </body>
 </html>

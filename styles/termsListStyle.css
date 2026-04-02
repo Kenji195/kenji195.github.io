@@ -1,0 +1,13 @@
+#terms-section {
+  text-align: justify;
+}
+
+.termsList-elements li {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.termsList-elements li ol li {
+  font-weight: normal;
+  margin-bottom: 1px;
+}

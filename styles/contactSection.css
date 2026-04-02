@@ -1,0 +1,37 @@
+.contacts-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact_btn {
+  min-width: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 12px;
+  text-decoration: none;
+  background: #2c2c2c;
+  color: white;
+  border-radius: 8px;
+
+  transition: 0.2s;
+}
+
+.contact_btn:hover {
+  background: #444;
+}
+
+.contact_icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.contact_label {
+  white-space: nowrap;
+}
