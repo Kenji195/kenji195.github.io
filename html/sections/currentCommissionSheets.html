@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current commission sheets</title>
+
+    <link rel="stylesheet" href="/styles/imagePreviewStyle.css" />
+    <link rel="stylesheet" href="/styles/commissionSheetStyle.css" />
+  </head>
+  <body>
+    <div id="commissionSheet-section">
+      <h2>Current commission price sheets ([03/2026])</h2>
+      <div id="commissionSheets">
+        <div class="commissionSheet">
+          <img
+            src="/images/commissions/sheets/Traditional Commissions.png"
+            alt="Traditional illustration commission price sheet"
+            onclick="openPreview(this)" />
+        </div>
+      </div>
+    </div>
+
+    <div id="imagePreview" onclick="closePreview()" meta-comment="TO IMPORT">
+      <img id="previewImg" />
+    </div>
+
+    <footer meta-comment="TO IMPORT">
+      <script src="/scripts/imagePreview.js"></script>
+    </footer>
+  </body>
+</html>
