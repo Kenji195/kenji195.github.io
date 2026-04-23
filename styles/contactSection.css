@@ -35,3 +35,50 @@
 .contact_label {
   white-space: nowrap;
 }
+
+/* 
+Extra row
+ */
+.contact-extra-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgb(0, 0, 0);
+}
+
+.contact-email a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
+
+.linktree-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 12px;
+  border-radius: 6px;
+
+  background: #054309; /* 👈 darker/subtler than buttons */
+  color: white;
+  text-decoration: none;
+
+  transition: 0.2s;
+}
+
+.linktree-btn:hover {
+  background: #057a47;
+}

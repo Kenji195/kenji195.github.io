@@ -1,4 +1,4 @@
-class IncludeHTML extends HTMLElement {
+class IncludeHTMLSection extends HTMLElement {
   connectedCallback() {
     const filename = this.getAttribute('section');
 
@@ -18,4 +18,4 @@ class IncludeHTML extends HTMLElement {
   }
 }
 
-customElements.define('include-html', IncludeHTML);
+customElements.define('include-html-section', IncludeHTMLSection);

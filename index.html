@@ -21,7 +21,8 @@
           style="font-size: xx-large"
           >Terms and agreement</a
         >
-        <include-html section="currentCommissionSheets"></include-html>
+        <include-html-section
+          section="currentCommissionSheets"></include-html-section>
       </div>
 
       <p style="height: 50px"></p>
@@ -30,11 +31,15 @@
         <h1 style="text-align: left">Current projects</h1>
         <div>
           <h2 style="text-align: left">Personal works</h2>
-          <h3>Trial before end</h3>
+          <h3>Fighter's First Trial</h3>
         </div>
         <div>
           <h2 style="text-align: left">Fan works</h2>
           <h3>Ultraman 60th anniversary celebration 3D fan animations</h3>
+          <h3>
+            Sonic Unleashed: ReAwakened (Opening cutscene reanimation collab,
+            Scene #1)
+          </h3>
         </div>
       </div>
 
@@ -42,11 +47,13 @@
         <h1 style="text-align: left">Themes</h1>
         <div>
           <h2 style="text-align: left">Personal works</h2>
-          Azaro, [Nameless RPG], G-Core, Intus Somnia
+          <include-html-section
+            section="selfCharacterGrid"></include-html-section>
         </div>
         <div>
           <h2 style="text-align: left">Fan works</h2>
-          Sonic, Ultraman
+          <include-html-section
+            section="thirdCharacterGrid"></include-html-section>
         </div>
       </div>
 
@@ -56,7 +63,7 @@
 
       <p style="height: 20px"></p>
 
-      <include-html section="contactSection"></include-html>
+      <include-html-section section="contactSection"></include-html-section>
     </div>
 
     <div id="imagePreview" onclick="closePreview()">

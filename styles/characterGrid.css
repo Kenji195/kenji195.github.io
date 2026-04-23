@@ -1,0 +1,54 @@
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+}
+
+.character-cell {
+  position: relative;
+  aspect-ratio: 1 / 1.5;
+
+  background: var(--cell-bg, #1a1a1a);
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-portrait {
+  max-width: 100%;
+  max-height: 100%;
+
+  object-fit: contain;
+  transition: transform 0.25s ease;
+
+  z-index: 1;
+}
+
+.character-cell:hover .character-portrait {
+  transform: scale(1.08);
+}
+
+.character-logo-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 25%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 2;
+}
+
+.character-logo {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+
+  pointer-events: none;
+}
