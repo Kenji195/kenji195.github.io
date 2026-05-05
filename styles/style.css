@@ -1,13 +1,36 @@
+body {
+  background-color: #350000;
+  padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+a {
+  color: #37c3ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 #content {
+  color: #ffc9a7;
   text-align: center;
   width: 85%;
   margin: 0 auto;
 }
 
 .boldText {
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .bolderText {
-  font-weight: bolder;
+  font-weight: 200;
 }

@@ -24,6 +24,7 @@
 
 .contact_btn:hover {
   background: #444;
+  text-decoration: none;
 }
 
 .contact_icon {
@@ -52,12 +53,6 @@ Extra row
   display: flex;
   align-items: center;
   gap: 6px;
-  color: rgb(0, 0, 0);
-}
-
-.contact-email a {
-  color: #000000;
-  text-decoration: none;
 }
 
 .contact-email a:hover {
@@ -72,7 +67,7 @@ Extra row
   padding: 8px 12px;
   border-radius: 6px;
 
-  background: #054309; /* 👈 darker/subtler than buttons */
+  background: #054309;
   color: white;
   text-decoration: none;
 
