@@ -79,6 +79,7 @@ footer {
 
 #sun-container {
   position: absolute;
+  overflow: visible;
 
   top: 0;
   right: 0;
@@ -119,41 +120,166 @@ footer {
       0 0 300px rgb(255, 255, 255);
   }
 }
-.sun::before {
-  content: '';
-  position: absolute;
 
-  width: 500%;
-  height: 500%;
+/* -------------------------
+
+
+SUN RAYS
+
+
+------------------------- */
+/* -------------------------
+   SUN RAYS
+------------------------- */
+
+.ray-rotator {
+  position: absolute;
 
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg);
 
-  background: conic-gradient(
-    rgba(255, 255, 255, 0.25) 0deg,
-    rgba(255, 255, 255, 0.05) 10deg,
-    transparent 20deg,
-    transparent 40deg,
-    rgba(255, 255, 255, 0.2) 50deg,
-    transparent 60deg,
-    transparent 90deg,
-    rgba(255, 255, 255, 0.15) 100deg,
-    transparent 120deg,
-    transparent 180deg,
-    rgba(255, 255, 255, 0.2) 200deg,
-    transparent 220deg,
-    transparent 360deg
-  );
+  width: 0;
+  height: 0;
 
-  animation: sunRays 20s linear infinite;
+  transform-origin: 0 0;
+
   pointer-events: none;
 }
-@keyframes sunRays {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+
+/* Actual visible ray */
+.sun-ray {
+  position: absolute;
+
+  left: -20px;
+  top: 0;
+
+  width: 40px;
+  height: 50vh;
+
+  clip-path: polygon(45% 0%, 55% 0%, 100% 100%, 0% 100%);
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.45) 0%,
+    rgba(255, 255, 255, 0.2) 40%,
+    rgba(255, 255, 255, 0.05) 75%,
+    transparent 100%
+  );
+
+  filter: blur(6px);
+
+  transform-origin: top center;
+
+  animation: rayPulse 6s ease-in-out infinite alternate;
+}
+
+/* ROTATION */
+
+.ray1 {
+  animation: rotateRay1 18s linear infinite;
+}
+
+.ray2 {
+  animation: rotateRay2 22s linear infinite;
+}
+
+.ray3 {
+  animation: rotateRay3 16s linear infinite;
+}
+
+.ray4 {
+  animation: rotateRay4 20s linear infinite;
+}
+
+.ray5 {
+  animation: rotateRay5 24s linear infinite;
+}
+
+.ray6 {
+  animation: rotateRay6 14s linear infinite;
+}
+
+/* Different starting angles */
+
+@keyframes rotateRay1 {
+  from {
+    transform: rotate(15deg);
   }
+  to {
+    transform: rotate(375deg);
+  }
+}
+
+@keyframes rotateRay2 {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(405deg);
+  }
+}
+
+@keyframes rotateRay3 {
+  from {
+    transform: rotate(75deg);
+  }
+  to {
+    transform: rotate(435deg);
+  }
+}
+
+@keyframes rotateRay4 {
+  from {
+    transform: rotate(105deg);
+  }
+  to {
+    transform: rotate(465deg);
+  }
+}
+
+@keyframes rotateRay5 {
+  from {
+    transform: rotate(135deg);
+  }
+  to {
+    transform: rotate(495deg);
+  }
+}
+
+@keyframes rotateRay6 {
+  from {
+    transform: rotate(165deg);
+  }
+  to {
+    transform: rotate(525deg);
+  }
+}
+
+/* Length pulsing */
+
+@keyframes rayPulse {
+  0% {
+    height: 35vh;
+    opacity: 0.4;
+  }
+
+  20% {
+    height: 50vh;
+    opacity: 0.7;
+  }
+
+  45% {
+    height: 28vh;
+    opacity: 0.35;
+  }
+
+  70% {
+    height: 42vh;
+    opacity: 0.6;
+  }
+
   100% {
-    transform: translate(-50%, -50%) rotate(360deg) scale(1.1);
+    height: 33vh;
+    opacity: 0.45;
   }
 }
