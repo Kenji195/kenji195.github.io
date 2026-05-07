@@ -6,7 +6,7 @@ class IncludeHTMLSection extends HTMLElement {
       return;
     }
 
-    fetch('/html/sections/' + filename + '.html')
+    fetch('/sections/' + filename + '.html')
       .then(res => res.text())
       .then(data => {
         this.innerHTML = data;
@@ -19,7 +19,6 @@ class IncludeHTMLSection extends HTMLElement {
 }
 
 customElements.define('include-html-section', IncludeHTMLSection);
-
 
 class ProjectPill extends HTMLElement {
   connectedCallback() {
