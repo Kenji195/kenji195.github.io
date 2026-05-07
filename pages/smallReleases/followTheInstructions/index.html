@@ -18,6 +18,7 @@
         <div class="ray-rotator ray6"><div class="sun-ray"></div></div>
       </div>
     </div>
+
     <div id="content">
       <img
         id="logo"
@@ -30,6 +31,7 @@
         style="font-family: 'Times New Roman', Times, serif; font-size: larger">
         <div style="font-style: italic">
           <h2>This might be the last time I see the sky</h2>
+          ---------------------------------------------------
         </div>
 
         <p></p>
@@ -66,13 +68,17 @@
     </div>
 
     <footer>
-      <img
-        src="/pages/smallReleases/followTheInstructions/images/Background.png"
-        class="bottom-bg"
-        alt="" />
+      <div class="footer-stack">
+        <!-- The physical image that defines the base height -->
+        <img
+          src="/pages/smallReleases/followTheInstructions/images/Background.png"
+          class="bottom-bg"
+          alt="" />
 
-      <div class="footer-overlay">
-        <include-html-section section="contactSection"></include-html-section>
+        <!-- The content that sits on top -->
+        <div class="footer-overlay">
+          <include-html-section section="contactSection"></include-html-section>
+        </div>
       </div>
 
       <script src="/scripts/importHTMLSection.js"></script>
