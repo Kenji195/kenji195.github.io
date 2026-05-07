@@ -1,0 +1,83 @@
+.project-pill-container {
+  width: 100%;
+  height: 300px;
+  padding: 4px;
+  border-radius: 32px;
+  background: black;
+  box-sizing: border-box;
+}
+
+.project-pill-gradient {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 28px;
+  overflow: hidden;
+  box-sizing: border-box;
+  /* Ensure children don't bleed out */
+  isolation: isolate; 
+}
+
+/* NEW: The Gradient Overlay */
+.project-pill-gradient::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* Pull the gradient from the variable */
+  background: linear-gradient(
+  to bottom right,
+  
+  color-mix(in srgb, var(--pill-gradient) 0%, transparent) 0%,
+  color-mix(in srgb, var(--pill-gradient) 50%, transparent) 30%,
+  color-mix(in srgb, var(--pill-gradient) 90%, transparent) 80%,
+  var(--pill-gradient) 100%
+);
+  /* Sit above the image but below the text */
+  z-index: 1;
+  /* Allow clicks to pass through to the <a> tag underneath */
+  pointer-events: none;
+}
+
+.project-pill {
+  position: absolute;
+  inset: 2px; /* shorthand for top/left/right/bottom */
+  border-radius: 26px;
+  overflow: hidden;
+  text-decoration: none;
+  background: black;
+  z-index: 0;
+}
+
+.project-pill-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.project-pill:hover .project-pill-bg {
+  transform: scale(1.05);
+}
+
+.project-pill-content {
+  position: absolute;
+  right: 24px;
+  bottom: 5px;
+  width: 50%;
+  text-align: right;
+  /* Ensure text is above the gradient */
+  z-index: 2; 
+  pointer-events: none;
+  color: var(--pill-text);
+}
+
+.project-pill-content h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.project-pill-content p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
