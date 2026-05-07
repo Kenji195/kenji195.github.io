@@ -1,83 +1,85 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kenji 195</title>
 
-    <link rel="stylesheet" href="/styles/style.css" />
-  </head>
-  <body>
-    <div id="content">
-      <h1>This site is in progress!</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenji 195</title>
 
-      <p></p>
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/projectPill.css" />
+</head>
 
+<body>
+  <div id="content">
+    <h1>This site is in progress!</h1>
+
+    <p></p>
+
+    <div>
+      <h1 style="text-align: left">Commissions currently open!!</h1>
+      <a href="/html/pages/commissionTerms/index.html" style="font-size: xx-large">Terms and agreement</a>
+      <include-html-section section="currentCommissionSheets"></include-html-section>
+    </div>
+
+    <p style="height: 50px"></p>
+
+    <div>
+      <h1 style="text-align: left">Current projects</h1>
       <div>
-        <h1 style="text-align: left">Commissions currently open!!</h1>
-        <a
-          href="/html/pages/commissionTerms/index.html"
-          style="font-size: xx-large"
-          >Terms and agreement</a
-        >
-        <include-html-section
-          section="currentCommissionSheets"></include-html-section>
+        <h2 style="text-align: left">Personal works</h2>
+
+        <include-html-section section="projectCapsules\azaro\fightersfirsttrial"></include-html-section>
       </div>
 
       <p style="height: 50px"></p>
 
       <div>
-        <h1 style="text-align: left">Current projects</h1>
-        <div>
-          <h2 style="text-align: left">Personal works</h2>
-          <h3>Fighter's First Trial</h3>
-        </div>
-        <div>
-          <h2 style="text-align: left">Fan works</h2>
-          <h3>Ultraman 60th anniversary celebration 3D fan animations</h3>
-          <h3>
-            Sonic Unleashed: ReAwakened (Opening cutscene reanimation collab,
-            Scene #1)
-          </h3>
-        </div>
+        <h2 style="text-align: left">Fan works</h2>
+
+        <include-html-section section="projectCapsules\ultraman\60anniversaryanimation"></include-html-section>
+
+        <p></p>
+
+        <include-html-section section="projectCapsules\sonic\unleashedreawekened"></include-html-section>
       </div>
+    </div>
 
-      <p style="height: 50px"></p>
+    <p style="height: 50px"></p>
 
+    <div>
+      <h1 style="text-align: left">Themes</h1>
       <div>
-        <h1 style="text-align: left">Themes</h1>
-        <div>
-          <h2 style="text-align: left">Personal works</h2>
-          <include-html-section
-            section="selfCharacterGrid"></include-html-section>
-        </div>
-
-        <p style="height: 10px"></p>
-
-        <h3 style="text-align: left">Small releases</h3>
-        <include-html-section section="smallReleases"></include-html-section>
-
-        <p style="height: 40px"></p>
-
-        <div>
-          <h2 style="text-align: left">Fan works</h2>
-          <include-html-section
-            section="thirdCharacterGrid"></include-html-section>
-        </div>
+        <h2 style="text-align: left">Personal works</h2>
+        <include-html-section section="selfCharacterGrid"></include-html-section>
       </div>
+
+      <p style="height: 10px"></p>
+
+      <h3 style="text-align: left">Small releases</h3>
+      <include-html-section section="smallReleasesGrid"></include-html-section>
 
       <p style="height: 40px"></p>
 
-      <include-html-section section="contactSection"></include-html-section>
+      <div>
+        <h2 style="text-align: left">Fan works</h2>
+        <include-html-section section="thirdCharacterGrid"></include-html-section>
+      </div>
     </div>
 
-    <div id="imagePreview" onclick="closePreview()">
-      <img id="previewImg" />
-    </div>
+    <p style="height: 40px"></p>
 
-    <footer>
-      <script src="/scripts/importHTMLSection.js"></script>
-      <script src="/scripts/imagePreview.js"></script>
-    </footer>
-  </body>
+    <include-html-section section="contactSection"></include-html-section>
+  </div>
+
+  <div id="imagePreview" onclick="closePreview()">
+    <img id="previewImg" />
+  </div>
+
+  <footer>
+    <script src="/scripts/importHTMLSection.js"></script>
+    <script src="/scripts/imagePreview.js"></script>
+  </footer>
+</body>
+
 </html>
