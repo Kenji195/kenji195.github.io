@@ -65,14 +65,15 @@
   z-index: 2;
   pointer-events: none;
   color: var(--pill-text);
+  container-type: inline-size;
 }
 
 .project-pill-content h2 {
   margin: 0;
-  font-size: 2rem;
+  font-size: clamp(16px, 6cqw, 48px);
 }
 
 .project-pill-content p {
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: clamp(12px, 2.3cqw, 20px);
 }

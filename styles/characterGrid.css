@@ -48,11 +48,12 @@
   justify-content: center;
 
   z-index: 2;
+  container-type: inline-size;
 }
 .character-logo-bar h2 {
   margin: 0;
   color: white;
-  font-size: 2rem;
+  font-size: clamp(8px, 10cqw, 30px);
   text-align: center;
 
   background: rgba(0, 0, 0, 0.6);
