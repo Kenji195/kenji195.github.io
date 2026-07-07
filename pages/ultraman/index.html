@@ -4,8 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ultraman's page</title>
+
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/projectPill.css" />
   </head>
   <body>
-    Ultraman main page
+    <div id="content">
+      Ultranan's page
+      <p></p>
+      <div>
+        <h1 style="text-align: left">Projects</h1>
+        <div>
+          <h2 style="text-align: left">Ongoing</h2>
+          <include-html-section
+            section="projectCapsules\ultraman\60anniversaryanimation"></include-html-section>
+        </div>
+      </div>
+
+      <p style="height: 20px"></p>
+
+      <div>
+        <h2 style="text-align: left">Archive</h2>
+        None
+      </div>
+    </div>
+
+    <footer>
+      <script src="/scripts/importHTMLSection.js"></script>
+    </footer>
   </body>
 </html>
