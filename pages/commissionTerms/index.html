@@ -15,7 +15,8 @@
       <div style="text-align: left">
         <a href="/index.html">Back</a>
       </div>
-      <div id="terms-section">
+
+      <div id="terms-section" class="list-section">
         <h2 style="font-weight: normal">
           Artwork commissions'
           <span class="boldText">Terms of Service Agreement</span>
@@ -395,13 +396,131 @@
         </div>
       </div>
 
+      <p style="height: 15px"></p>
+      <hr />
+      <p style="height: 15px"></p>
+
+      <div class="list-section">
+        <h2 style="font-weight: normal">
+          <span class="boldText">Character(s) Pricing Rules</span>
+        </h2>
+        <div id="character-section">
+          For the purposes of these pricing rules...
+          <ul>
+            <li>
+              A <span class="boldText">Character</span> is a unique identity or
+              design (for example, an original character, a fictional character,
+              a real person, an animal, or another identifiable subject).
+            </li>
+            <li>
+              A <span class="boldText">Character Display</span> is an
+              intentional, focal-point depiction of a Character.
+              <br />
+              <em>Note:</em>
+              The following do NOT count as separate Character Displays:
+              <ul>
+                <li>
+                  Decorative iconography, silhouettes, or insignias used as
+                  props or textures.
+                </li>
+                <li>
+                  Character-shaped objects (e.g., a charm on a bracelet, a
+                  patterned fabric).
+                </li>
+                <li>
+                  Ephemeral manifestations (e.g., magic energy, mist, or
+                  reflections) that lack significant facial or anatomical
+                  detail.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          Pricing is based on the number of Character Displays, not the number
+          of unique Characters. As a result, multiple depictions of the same
+          Character (such as reflections, mirrored versions, character-shaped
+          objects, or similar representations) are counted separately when they
+          require individual drawing effort.
+          <p style="height: 15px"></p>
+          <div class="termsList-elements">
+            <ol>
+              <li>
+                MULTIPLE CHARACTER DISCOUNT
+                <ol type="a">
+                  <li>
+                    When multiple Character Displays share the same style, only
+                    one (1) Character Display of that style is charged at the
+                    full base price.
+                  </li>
+                  <li>
+                    Each additional Character Display using that same style is
+                    charged at 50% (fifty percent) of that style's base price.
+                  </li>
+                  <li>
+                    If multiple styles are combined within the same commission,
+                    this pricing rule is applied independently to each style.
+                  </li>
+                  <li>
+                    Examples:
+                    <ul>
+                      <li>
+                        Three (3) Flat colored character displays = One (1) full
+                        price + Two (2) half price.
+                      </li>
+                      <li>
+                        Two (2) Flat colored character displays + Two (2) Cell
+                        shaded character displays = One (1) flat price + One (1)
+                        half priced flat + One (1) full cell shaded + One (1)
+                        half priced cell shading
+                      </li>
+                      <li>
+                        One (1) Lineless + One (1) Black shade = Both charged at
+                        full price.
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+
+              <li>
+                FRAMING
+                <ol type="a">
+                  <li>
+                    Available framing options include
+                    <span class="boldText">Full Body</span> and
+                    <span class="boldText">Head</span>. Any Character Display
+                    depicting more than just the head is classified as Full Body
+                    for pricing purposes and is charged according to the Full
+                    Body price of the selected style.
+                  </li>
+                  <li>
+                    When a commission includes one or more Full Body Character
+                    Displays, one (1) Full Body Character Display is always
+                    charged at the full Full Body base price.
+                  </li>
+                  <li>
+                    This applies regardless of whether the Character Displays
+                    represent the same Character or different Characters, and
+                    regardless of how many Character Displays use each framing
+                    option.
+                  </li>
+                  <li>
+                    Any remaining Character Displays are then priced according
+                    to the Multiple Character Discount, using the corresponding
+                    framing and selected style for each Character Display.
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
       <p style="height: 10px"></p>
 
-      <include-html section="currentCommissionSheets"></include-html>
+      <include-html-section
+        section="currentCommissionSheets"></include-html-section>
 
-      <p></p>
-
-      <include-html section="contactSection"></include-html>
+      <include-html-section section="contactSection"></include-html-section>
     </div>
 
     <div id="imagePreview" onclick="closePreview()">
@@ -411,7 +530,7 @@
     <footer>
       <script src="/scripts/importHTMLSection.js"></script>
       <script src="/scripts/imagePreview.js"></script>
-      <script src="/html/pages/commissionTerms/scripts/overwriteTermsListStyle.js"></script>
+      <script src="scripts/overwriteTermsListStyle.js"></script>
     </footer>
   </body>
 </html>

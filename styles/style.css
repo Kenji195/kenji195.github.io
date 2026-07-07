@@ -26,11 +26,15 @@ a:hover {
   width: 85%;
   margin: 0 auto;
 }
+hr {
+  border: none;
+  border-top: 1px solid #ffc9a7;
+}
 
 .boldText {
   font-weight: lighter;
 }
 
 .bolderText {
-  font-weight: 200;
+  font-weight: 900;
 }
